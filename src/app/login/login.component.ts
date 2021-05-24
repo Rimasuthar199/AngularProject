@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
   retriveData(response) {
     this.authenticationService.authenticate(this.userName, this.password)
     this.inavlidLogin = false
-    this.router.navigate(['list']);
+    this.router.navigate(['welcome']);
     console.log("In response" + response)
   }
 }

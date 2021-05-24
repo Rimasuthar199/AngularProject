@@ -17,6 +17,7 @@ import { UserContactComponent } from './user-contact/user-contact.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { UpdateUserComponent } from './update-user/update-user.component';
 import { SearchComponent } from './search/search.component';
+import { DeactiveUserComponent } from './deactive-user/deactive-user.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SearchComponent } from './search/search.component';
     UserContactComponent,
     UserRegisterComponent,
     UpdateUserComponent,
-    SearchComponent
+    SearchComponent,
+    DeactiveUserComponent
   ],
   imports: [
     BrowserModule,

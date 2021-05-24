@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { DeactiveUserComponent } from './deactive-user/deactive-user.component';
 import { ErrorComponent } from './error/error.component';
 import { ListComponent } from './list/list.component';
 import { LoginComponent } from './login/login.component';
@@ -16,8 +17,9 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'register', component: UserRegisterComponent},
   { path: 'login', component: LoginComponent },
-  { path: 'welcome/:name', component: WelcomeComponent, canActivate: [RouteGuardServiceService] },
+  { path: 'welcome', component: WelcomeComponent, canActivate: [RouteGuardServiceService] },
   { path: 'list', component: ListComponent, canActivate: [RouteGuardServiceService] },
+  { path: 'deactive', component: DeactiveUserComponent, canActivate: [RouteGuardServiceService] },
   { path: 'logout', component: LogoutComponent, canActivate: [RouteGuardServiceService] },
   { path: 'address', component: UserAddressComponent, canActivate: [RouteGuardServiceService] },
   { path: 'contact', component: UserContactComponent, canActivate: [RouteGuardServiceService] },

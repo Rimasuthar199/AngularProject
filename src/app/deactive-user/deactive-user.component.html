@@ -11,9 +11,6 @@
       <th scope="col">EmailId</th>
       <th scope="col">Date Of Birth</th>
       <th scope="col">Joining Date</th>
-      <th scope="col">Address</th>
-      <th scope="col">Contact</th>
-      <th scope="col">Update</th>
       <th scope="col">Delete</th>
     </tr>
   </thead>
@@ -24,12 +21,8 @@
       <td>{{list.email_id}}</td>
       <td>{{list.date_of_birth }}</td>
       <td>{{list.joining_date }}</td>
-      <td ><a routerLink="/address" (click)=setUserAddress($event,list.user_address) >Address</a></td>
-      <td ><a routerLink="/contact" (click)=setUserContact($event,list.user_contact) >Contact</a></td>
       
-      
-    <td> <input type="submit" value="Update" (click)=updateData($event,list.id,list,list.user_address,list.user_contact,list.user_login) class="btn btn-info btn-md"><br><br></td>
-    <td> <input type="submit" value="Delete" (click)=deleteData($event,list.id,1) class="btn btn-info btn-md"><br><br>
+    <td> <input type="submit" value="Delete Permenant" (click)=deleteData($event,list.id,0) class="btn btn-info btn-md"><br><br>
     </td>
     </tr>
   </tbody>

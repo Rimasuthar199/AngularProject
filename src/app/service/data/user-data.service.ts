@@ -43,5 +43,9 @@ export class UserDataService {
     return this.http.get<ListData[]>(`http://localhost:8080/user/findUser`,opts)
   }
 
+  deactiveUser(){
+    return this.http.get<ListData[]>('http://localhost:8080/user/deactivate')
+  }
+
 }
 
