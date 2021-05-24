@@ -1,0 +1,17 @@
+<div>
+  <!-- <input type="submit" value="Add DATA" (click)=addData() class="btn btn-info float-right"><br><br> -->
+  <h5 style="text-align:left"> TODO LIST</h5>
+</div>
+
+<table class="table">
+  <thead class="bg-info">
+    <tr>
+      <th scope="col">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of userContact">
+      <td>{{contact.contact_no}}</td>
+    </tr>
+  </tbody>
+</table>

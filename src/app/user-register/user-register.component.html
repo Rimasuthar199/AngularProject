@@ -1,0 +1,75 @@
+<div class="container login-container">
+  <div class="row">
+      <div class="col-md-6 login-form-1">
+          <h3>PesronalDetails  Form </h3>
+          <form>
+              <div class="form-group">
+                  <input type="text" name="firstName" [(ngModel)]=user.first_name class="form-control"
+                      placeholder="Your FirstName *"  autocomplete="off" />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="lastName" [(ngModel)]=user.last_name class="form-control"
+                      placeholder="Your LastName *"  autocomplete="off"/>
+              </div>
+              <div class="form-group">
+                <input type="text" name="email_id" [(ngModel)]=user.email_id class="form-control"
+                    placeholder="Your Email *"  autocomplete="off"/>
+            </div>
+            <div class="form-group">
+                <input type="text" name="birtDate" [(ngModel)]=user.date_of_birth class="form-control"
+                    placeholder="Your BirthDate dd-mm-yyyy"  autocomplete="off"/>
+            </div>
+            <div class="form-group">
+                <input type="text" name="joinDate" [(ngModel)]=user.joining_date class="form-control"
+                    placeholder="Your JoiningDate dd-mm-yyyy"  autocomplete="off"/>
+            </div>
+            <div class="form-group">
+                <input type="text" name="userName" [(ngModel)]=login.username class="form-control"
+                    placeholder="Your UserName"  autocomplete="off"/>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" [(ngModel)]=login.password class="form-control"
+                    placeholder="Your Password"  autocomplete="off"/>
+            </div>
+              <div class="form-group">
+                  <!-- <input type="submit" value="submit" (click)=handleLogin() class="btn btn-info btn-md"><br><br> -->
+                  <input type="submit" value="Register" (click)=saveUser() class="btn btn-info btn-md"><br><br>
+              </div>
+          </form>
+      </div>
+      <div class="col-md-6 login-form-2">
+        <h3>Address  Form </h3>
+        <form>
+            <div class="form-group">
+                <input type="text" name="city" [(ngModel)]=address.city class="form-control"
+                    placeholder="Your city *"  autocomplete="off"/>
+            </div>
+            <div class="form-group">
+                <input type="text" name="state" [(ngModel)]=address.state class="form-control"
+                    placeholder="Your State *"  autocomplete="off"/>
+            </div>
+            <div class="form-group">
+              <input type="text" name="country" [(ngModel)]=address.country class="form-control"
+                  placeholder="Your Country *"  autocomplete="off" />
+          </div>
+          <div class="form-group">
+              <input type="text" name="zipcode" [(ngModel)]=address.zipcode class="form-control"
+                  placeholder="Your zipcode"  autocomplete="off"/>
+          </div>
+          <div class="form-group">
+              <input type="text" name="address" [(ngModel)]=address.address_1 class="form-control"
+                  placeholder="Your Address 1"  autocomplete="off"/>
+          </div>
+          <div class="form-group">
+              <input type="text" name="address2" [(ngModel)]=address.address_2 class="form-control"
+                  placeholder="Your Address 2"  autocomplete="off"/>
+          </div>
+         <div class="form-group">
+              <input type="text" name="contact" [(ngModel)]=contact.contact_no class="form-control"
+                  placeholder="Your Contact No"  autocomplete="off"/>
+          </div>
+        </form>
+
+      </div>
+  </div>
+</div>

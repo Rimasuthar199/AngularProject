@@ -1,0 +1,74 @@
+ <div class="container login-container">
+  <div class="row">
+      <div class="col-md-6 login-form-1">
+          <h3>PesronalDetails  Form </h3>
+          <form>
+              <div class="form-group">
+                  <input type="text" name="firstName" [(ngModel)]=list.first_name class="form-control"
+                      placeholder="Your FirstName *" />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="lastName" [(ngModel)]=list.last_name class="form-control"
+                      placeholder="Your LastName *" />
+              </div>
+              <div class="form-group">
+                <input type="text" name="email_id" [(ngModel)]=list.email_id class="form-control"
+                    placeholder="Your Email *" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="birtDate" [(ngModel)]=list.date_of_birth class="form-control"
+                    placeholder="Your BirthDate dd/mm/yyyy" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="joinDate" [(ngModel)]=list.joining_date class="form-control"
+                    placeholder="Your JoiningDate dd/mm/yyyy" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="userName" [(ngModel)]=userLogin.username class="form-control"
+                    placeholder="Your UserName" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="password" [(ngModel)]=userLogin.password class="form-control"
+                    placeholder="Your Password" />
+            </div>
+              <div class="form-group">
+                  <input type="submit" value="Update" (click)=updateUser() class="btn btn-info btn-md"><br><br> 
+              </div>
+          </form>
+      </div>
+      <div class="col-md-6 login-form-2">
+        <h3>Address  Form </h3>
+        <form>
+            <div class="form-group">
+                <input type="text" name="city" [(ngModel)]=singleAddress.city class="form-control"
+                    placeholder="Your city *" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="state" [(ngModel)]=singleAddress.state class="form-control"
+                    placeholder="Your State *" />
+            </div>
+            <div class="form-group">
+              <input type="text" name="country" [(ngModel)]=singleAddress.country class="form-control"
+                  placeholder="Your Country *" />
+          </div>
+          <div class="form-group">
+              <input type="text" name="zipcode" [(ngModel)]=singleAddress.zipcode class="form-control"
+                  placeholder="Your zipcode" />
+          </div>
+          <div class="form-group">
+              <input type="text" name="address" [(ngModel)]=singleAddress.address_1 class="form-control"
+                  placeholder="Your Address 1" />
+          </div>
+          <div class="form-group">
+              <input type="text" name="address2" [(ngModel)]=singleAddress.address_2 class="form-control"
+                  placeholder="Your Address 2" />
+          </div>
+         <div class="form-group">
+              <input type="text" name="contact" [(ngModel)]=singleContact.contact_no class="form-control"
+                  placeholder="Your Contact No" />
+          </div>
+        </form>
+
+      </div>
+  </div>
+</div>

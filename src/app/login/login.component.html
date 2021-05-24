@@ -1,0 +1,56 @@
+<!-- 
+<div>
+  
+  USERNAME : <input type="text" name="username" [(ngModel)]="userName">
+  <br>
+  <br>
+  PASSWORD : <input type="password" name="password" [(ngModel)]="password">
+  <br>
+  <br>
+  
+  to print data -->
+  
+  <!-- Your Name is   {{userName}}
+  
+  <br>
+  <br>
+  
+  <button (click)=handleLogin()>Login</button>
+</div>
+
+
+<div>
+  <small *ngIf='inavlidLogin'>{{errorMeassge}}</small>
+</div> --> 
+<div class="container login-container">
+  <div class="row">
+      <div class="col-md-6 login-form-1">
+          <h3>Login Form </h3>
+          <form>
+              <div class="form-group">
+                  <input type="text" name="userName" [(ngModel)]=userName class="form-control"
+                      placeholder="Your UserName *" autocomplete="off"/>
+              </div>
+              <div class="form-group">
+                  <input type="password" name="pwd" [(ngModel)]=password class="form-control"
+                      placeholder="Your Password *" />
+              </div>
+              <div class="form-group">
+                  <!-- <input type="submit" value="submit" (click)=handleLogin() class="btn btn-info btn-md"><br><br> -->
+                  <input type="submit" value="Login" (click)=handleLogin() class="btn btn-info btn-md"><br><br>
+              </div>
+              <div class="form-group">
+                <p class="text-primary"><b><i>New User ? Please Sign Up</i></b></p>
+                <a class="text-primary" routerLink="/register"><b>Sign Up</b></a>
+              </div>
+          </form>
+      </div>
+      <div class="col-md-6 login-form-2">
+
+          <p class="text-white"><b><i>We Are Providing The Best Solution Here !!!</i></b></p>
+          <p class="text-white"><b><i>Everyday is another chance to change your life</i></b></p>
+          <p class="text-white"><b><i> Be original</i></b></p>
+
+      </div>
+  </div>
+</div>
